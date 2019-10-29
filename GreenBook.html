@@ -1,0 +1,95 @@
+<html>
+<head>
+   <title>Create your Event </title>
+    <link rel="stylesheet" type="text/css" href="css/GB.css">
+</head>
+<body>
+<div>
+  <h1>Create your event</h1>
+
+</div>
+<div>
+  <input id="event-name" placeholder="Whats your event name?" type="text"><br>
+  <input id="event-location" placeholder="Where is it taking place?" type="text"><br>
+</div>
+<div>
+  <input type="text" id="datetime12" data-format="DD-MM-YYYY h:mm a" data-template="DD / MM / YYYY     hh : mm a" name="datetime" value="21-12-2012 8:30 pm">
+    <script>
+       $(function(){
+        $('#datetime12').combodate({
+          firstItem: 'day'
+          minDay: 1
+          maxDay: 31
+          dayStep: 1
+          secondItem: 'month'
+          minMonth: 1
+          maxMonth: 12
+          monthStep: 1
+          thirdItem: 'year'
+          minYear: 2019
+          maxYear: 2100
+          yearStep: 1
+          });
+        });
+      </script>
+  <input type="text" id="time" data-format="HH:mm" data-template="HH : mm" name="datetime">
+    <script>
+      $(function(){
+        $('#time').combodate({
+        firstItem: 'minute',
+        minMinute: 0
+        maxMinute: 59
+        minuteStep: 5
+        secondItem: 'hour'
+        minHour: 0
+        maxHour: 23
+        hourStep:1
+      });
+    });
+  </script>
+</div><!-- Drop down menus that don't work-->
+<div>
+  <input class="description" id="event-description" placeholder="Tell us about your event" type="text"><br>
+  <input id="organiser-name" placeholder="Organiser Name" type="text"><br>
+  <input id="ethical-focus" placeholder="Whats your ethical focus?">
+  <h2>
+    Visability
+  </h2>
+ <br>
+  <input type="checkbox" name="members" value="Members Only"> Members Only<br>
+  <input type="checkbox" name="public" value="Public"> Public <br>
+  <input type="checkbox" name="vialink" value="Vialink"> Via Shared Link <br>
+</div>
+</li></ul></div>
+
+      </div>
+</a>
+</li></ul></div>
+
+        </div>
+    </div>
+  <ol>
+   <li>HTML is cool</li>
+   <li id="lower">CSS is cooler</li>
+   <li id="lowest">JS is the best</li>
+  </ol>
+</div>
+<div class='contrast'>
+ <h2><em>
+  What do you need to create a website?
+</em></h2>
+ <p>Not much!<p>
+
+ <ul>
+    <li>A computer (always a good start)
+    <li>A text editor( I am using Atom)
+    <li>A web browser (I am using chrome)
+    <li>Some HTML, CSS and JS files
+  </ul>
+</div>
+<br>
+<p>
+  Follow my progress on <a href="https://github.com/CodeFirstGirls/beginners-week-one">github</a>
+</p>
+</body>
+</html>
